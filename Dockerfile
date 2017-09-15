@@ -23,10 +23,6 @@ RUN ln -s /usr/local/instantclient_12_2 /usr/local/instantclient \
     && ln -s /usr/local/instantclient/libocci.so.12.1 /usr/local/instantclient/libocci.so \
     && rm -rf /tmp/*.zip
 
-# Install pecl
-#RUN curl -O http://pear.php.net/go-pear.phar \
-#    ; /usr/local/bin/php -d detect_unicode=0 go-pear.phar
-
 # Install PHP required extensions
 # -- GD
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ && \
