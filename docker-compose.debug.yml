@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  php7-apache-oci:
+    image: php7-apache-oci
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
