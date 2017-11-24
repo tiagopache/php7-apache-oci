@@ -5,7 +5,7 @@ MAINTAINER Tiago Pache <tiagopache@gmail.com>
 LABEL Name=tiagopache/php7-apache-oci Version=1.0.0 
 
 RUN apt-get update && \
-    apt-get install -y libfreetype6-dev libxml2-dev libaio-dev unzip
+    apt-get install -y libfreetype6-dev libxml2-dev libaio-dev unzip jq
 
 # Oracle InstantClient
 # Copy InstantClient Files
